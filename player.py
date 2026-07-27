@@ -7,6 +7,7 @@ class Player:
         self.luck=luck
     def attacked(self):
         self.life-=self.life
+        return self.life
 
 class Man(Player):
     def __init__(self, name, life, strength, agility, luck):

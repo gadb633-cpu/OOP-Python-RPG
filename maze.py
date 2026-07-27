@@ -1,8 +1,8 @@
 class Maze:
     def __init__(self):
-        self.list_of_rooms = []
+        self.maze = []
     def add_room(self):
-        self.list_of_rooms.append()
-        return self.list_of_rooms
+        self.maze.append()
+        return self.maze
   
         

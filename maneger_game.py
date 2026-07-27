@@ -1,9 +1,9 @@
 class Game_manager:
     def __init__(self):
-        self.playre = ""
+        self.player = ""
         self.maze = []
         self.monster = ""
-    def create_playet():
+    def create_player():
         pass
     def create_monster():
         pass
@@ -11,4 +11,3 @@ class Game_manager:
         pass
     def Game_summary():
         pass
-        

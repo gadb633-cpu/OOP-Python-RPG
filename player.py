@@ -1,3 +1,4 @@
+from battle import attack
 class Player:
     def __init__(self,name,life,strength,agility,luck):
         self.name=name
@@ -6,9 +7,8 @@ class Player:
         self.agility=agility
         self.luck=luck
     def attacked(self):
-        self.life-=self.life
-        return self.life
-
+        self.life=attack()
+        
 class Man(Player):
     def __init__(self, name, life, strength, agility, luck):
         super().__init__(name, life, strength, agility, luck)

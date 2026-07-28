@@ -1,10 +1,8 @@
 from config import *
-from player import *
-
 class Battle:
-    def __init__(self):
-        self.player=User(PLAYER_NAME,PLAYER_LIFE,PLAYER_STRENGH,PLAYER_AGILITY,PLAYER_LUCK)
-        self.monster=Monster(MONSTER_NAME,MONSTER_LIFE,MONSTER_STRENGH,MONSTER_AGILITY,MONSTER_LUCK)
+    def __init__(self,player,monster):
+        self.player=player
+        self.monster=monster
 
     def first_attacker(self):
         if self.player.agility + self.player.luck >= self.monster.agility + self.monster.luck:
@@ -22,7 +20,7 @@ class Battle:
 
         if self.player.is_alive() and self.monster.is_alive():
             self.first_attacker()
-            print(f"Start battle: Attacker: {self.attacker.name} | Defander: {self.defander.name}")
+            print(f"Starting battle: Attacker: {self.attacker.name} | Defander: {self.defander.name}")
 
             while self.defander.is_alive():
                 self.start_attack(self.defander)
@@ -31,7 +29,7 @@ class Battle:
                     self.defander=self.attacker
                     self.attacker=hold_defender
                 
-            print(f"Battle finished, {self.attacker.name} win!")
+            print(f"Battle, {self.attacker.name} win!")
 
 
 

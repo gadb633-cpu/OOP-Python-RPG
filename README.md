@@ -16,7 +16,7 @@ the user enters to the room and fights with the monster until victory.
 3. Run the `maneger_game.py` file.
 
 ## How to play
-
+Enter your name in the 'config' file under PLAYER_NAME
 The first to attack is the winner. The attacker is chosen based on the sum of the higher Agility and Luck values. To choose an attacker, you must change the Agility and Luck values ​​in the 'config' file to be higher than the defender's.
 
 ## Current Main Tasks

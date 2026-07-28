@@ -1,10 +1,11 @@
+from config import config
 class Player:
-    def __init__(self,name,life,strength,agility,luck):
-        self.name=name
-        self.life=life
-        self.strength=strength
-        self.agility=agility
-        self.luck=luck
+    def __init__(self,config):
+        self.name=""
+        self.life=""
+        self.strength=""
+        self.agility=""
+        self.luck=""
     
     def take_damage(self,damage):
         self.life-=damage
@@ -14,14 +15,23 @@ class Player:
             return True 
 
 class User(Player):
-    def __init__(self, name, life, strength, agility, luck):
-        super().__init__(name, life, strength, agility, luck)
-    
-
+    def __init__(self,config):
+        super().__init__(config)
+        self.name=config["PLAYER NAME"]
+        self.life=config["PLAYER LIFE"]
+        self.strength=config["PLAYER STRENGH"]
+        self.agility=config["PLAYER AGILITY"]
+        self.luck=config["PLAYER LUCK"]
     
 class Monster(Player):
-    def __init__(self, name, life, strength, agility, luck):
-        super().__init__(name, life, strength, agility, luck)
+    def __init__(self,config):
+        super().__init__(config)
+        self.name=config["MONSTER NAME"]
+        self.life=config["MONSTER LIFE"]
+        self.strength=config["MONSTER STRENGH"]
+        self.agility=config["MONSTER AGILITY"]
+        self.luck=config["MONSTER LUCK"]
+            
 
 
         

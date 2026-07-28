@@ -1,4 +1,4 @@
-from config import *
+from config import config
 class Battle:
     def __init__(self,player,monster):
         self.player=player
@@ -13,7 +13,7 @@ class Battle:
             self.defander=self.player
 
     def start_attack(self,defander):
-        defander.take_damage(DAMAGE)
+        defander.take_damage(config["DAMAGE"])
 
     
     def run(self):

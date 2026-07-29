@@ -11,7 +11,7 @@ class Maze:
 
 
     def create_rooms(self):
-        for i in range(4):
+        for i in range(config["ROOM NUM"]):
             chance_to_monster=random.randint(0,100)
             if chance_to_monster < 80:
                 chance_to_goblin=random.randint(0,100)

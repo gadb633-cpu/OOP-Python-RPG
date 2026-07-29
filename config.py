@@ -1,5 +1,5 @@
 config={
-    "PLAYER NAME":"Player",
+    "PLAYER NAME":"eli",
     "PLAYER LIFE":10,
     "PLAYER STRENGH":4,
     "PLAYER AGILITY":5,
@@ -7,7 +7,7 @@ config={
     "GOBLIN NAME":"Goblin",
     "GOBLIN LIFE":10,
     "GOBLIN STRENGH":5,
-    "GOBLIN AGILITY":6,
+    "GOBLIN AGILITY":4,
     "GOBLIN LUCK":3,
     "ORC NAME":"Orc",
     "ORC LIFE":10,

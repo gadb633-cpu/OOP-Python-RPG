@@ -7,5 +7,5 @@ class Maze:
         self.maze.append(self.room)
     def get_maze(self):
         return self.maze
-
+    
         

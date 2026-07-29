@@ -29,7 +29,7 @@ class Battle:
                     self.defander=self.attacker
                     self.attacker=hold_defender
                 
-            print(f"Battle, {self.attacker.name} win!")
+            print(f"Battle finished, {self.attacker.name} win!")
 
 
 

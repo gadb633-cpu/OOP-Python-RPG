@@ -1,5 +1,5 @@
 from battle import Battle
-from player import Monster
+from player import Goblin,Orc
 from config import config
 
 class Room:
@@ -8,7 +8,8 @@ class Room:
         self.monster=monster
 
     def create_battle(self):
-        if isinstance(self.monster,Monster):
+        if isinstance(self.monster,(Goblin,Orc)):
             battle=Battle(self.player,self.monster)
             battle.run()
+
 

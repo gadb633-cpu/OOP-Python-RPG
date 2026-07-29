@@ -21,9 +21,9 @@ class Maze:
     def get_room(self):
         self.add_room()
         for i in range(len(self.maze)):
-                enter=input(f"do you want to go into room {i+1}? ")
+                enter=input(f"Do you want to go into room {i+1}? (yes/no) ")
                 if enter == "yes":
-                    print(f"you are now in room {i+1}")
+                    print(f"\nYou are now in room {i+1}")
                     self.maze[i].create_battle()
                 else:
                     break

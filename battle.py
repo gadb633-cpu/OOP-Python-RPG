@@ -12,8 +12,10 @@ class Battle:
             self.attacker=self.monster
             self.defander=self.player
 
-    def start_attack(self,defander):
-        defander.take_damage(config["DAMAGE"])
+    def start_attack(self):
+        
+        self.defander.take_damage(config["DAMAGE"])
+        print(f"{self.attacker.name} successfully attacked!\n{self.defander.name} life: {self.defander.life}\n")
 
     
     def run(self):
@@ -21,9 +23,10 @@ class Battle:
         if self.player.is_alive() and self.monster.is_alive():
             self.first_attacker()
             print(f"Starting battle: Attacker: {self.attacker.name} | Defander: {self.defander.name}")
+            print(f"{self.attacker.name} life: {self.attacker.life}\n{self.defander.name} life: {self.defander.life}\n")
 
             while self.defander.is_alive():
-                self.start_attack(self.defander)
+                self.start_attack()
                 if self.defander.is_alive():
                     hold_defender=self.defander
                     self.defander=self.attacker

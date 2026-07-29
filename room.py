@@ -9,9 +9,10 @@ class Room:
 
     def create_battle(self):
         if isinstance(self.monster,(Goblin,Orc)):
+            print(f"{self.monster.name} is in room. \n")
             battle=Battle(self.player,self.monster)
             battle.run()
         else:
-            print("empty room, no battle!")
+            print("Empty room, no battle!\n")
 
 

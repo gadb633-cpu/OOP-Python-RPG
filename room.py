@@ -1,6 +1,5 @@
 from battle import Battle
 from player import Goblin,Orc
-from config import config
 
 class Room:
     def __init__(self,player,monster):
@@ -11,7 +10,7 @@ class Room:
         if isinstance(self.monster,(Goblin,Orc)):
             print(f"{self.monster.name} is in room. \n")
             battle=Battle(self.player,self.monster)
-            battle.run()
+            battle.run_battle()
         else:
             print("Empty room, no battle!\n")
 

@@ -11,5 +11,7 @@ class Room:
         if isinstance(self.monster,(Goblin,Orc)):
             battle=Battle(self.player,self.monster)
             battle.run()
+        else:
+            print("empty room, no battle!")
 
 

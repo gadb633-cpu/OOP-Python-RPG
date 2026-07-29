@@ -8,14 +8,12 @@ config={
     "GOBLIN LIFE":10,
     "GOBLIN STRENGH":5,
     "GOBLIN AGILITY":6,
-    "GOBLIN LUCK":2,
+    "GOBLIN LUCK":3,
     "ORC NAME":"orc",
     "ORC LIFE":10,
     "ORC STRENGH":7,
     "ORC AGILITY":4,
     "ORC LUCK":3,
-
-
     "ROOM NUM":1,
     "DAMAGE":10
 }

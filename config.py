@@ -1,14 +1,21 @@
 config={
     "PLAYER NAME":"player",
     "PLAYER LIFE":10,
-    "PLAYER STRENGH":2,
+    "PLAYER STRENGH":4,
     "PLAYER AGILITY":5,
     "PLAYER LUCK":3,
-    "MONSTER NAME":"monster",
-    "MONSTER LIFE":15,
-    "MONSTER STRENGH":5,
-    "MONSTER AGILITY":3,
-    "MONSTER LUCK":2,
+    "GOBLIN NAME":"goblin",
+    "GOBLIN LIFE":10,
+    "GOBLIN STRENGH":5,
+    "GOBLIN AGILITY":6,
+    "GOBLIN LUCK":2,
+    "ORC NAME":"orc",
+    "ORC LIFE":10,
+    "ORC STRENGH":7,
+    "ORC AGILITY":4,
+    "ORC LUCK":3,
+
+
     "ROOM NUM":1,
-    "DAMAGE":5
+    "DAMAGE":10
 }

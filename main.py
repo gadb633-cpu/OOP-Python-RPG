@@ -1,12 +1,13 @@
-from room import Room
 from player import User
 from config import config
+from maze import *
 class Main:
     def __init__(self):
         self.player=User(config)
-        self.room=Room(self.player)
-    def create_room(self):
-        self.room.create_battle()
+        self.maze=Maze(self.player)
+    def enter_room(self):
+        self.maze.get_room()
    
 game=Main()
-game.create_room()
+game.enter_room()
+

@@ -14,5 +14,9 @@ config={
     "ORC STRENGH":7,
     "ORC AGILITY":4,
     "ORC LUCK":3,
-    "DAMAGE":5
+    "DAMAGE":5,
+    "CHANCE TO MONSTER": 80,
+    "CHANCE TO GOBLIN": 50,
+    "NUM OF ROOMS": 4
+
 }

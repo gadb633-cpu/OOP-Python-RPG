@@ -1,5 +1,5 @@
 config={
-    "PLAYER NAME":"Player",
+    "PLAYER NAME":"eli",
     "PLAYER LIFE":10,
     "PLAYER STRENGH":4,
     "PLAYER AGILITY":5,
@@ -14,5 +14,6 @@ config={
     "ORC STRENGH":7,
     "ORC AGILITY":4,
     "ORC LUCK":3,
-    "DAMAGE":5
+    "DAMAGE":5,
+    "ROOM NUM":4
 }
